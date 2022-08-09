@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/layout_bottom_sheet_background">
+
+    <FrameLayout
+        android:id="@+id/flBottomSheetHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_border_bottom"
+        android:paddingTop="@dimen/dp_4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <View
+            android:layout_width="@dimen/dp_30"
+            android:layout_height="@dimen/dp_4"
+            android:layout_gravity="center|top"
+            android:background="@drawable/layout_shape_grey" />
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tlHeader"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_84"
+            android:layout_marginTop="@dimen/dp_10"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/app_name"
+            app:tabRippleColor="@android:color/transparent"
+            app:tabIndicatorHeight="0dp"
+            app:tabMode="scrollable" />
+
+    </FrameLayout>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/vp2Content"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_480"
+        app:layout_constraintTop_toBottomOf="@id/flBottomSheetHeader" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/llItemHeader"
+    android:layout_width="@dimen/dp_80"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivImage"
+        android:layout_width="@dimen/dp_45"
+        android:layout_height="@dimen/dp_50"
+        android:layout_gravity="center"
+        android:background="@drawable/ic_pets"
+        android:gravity="center" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_3"
+        android:gravity="center"
+        android:maxLines="1"
+        android:textColor="@color/C_BF000000"
+        android:textSize="@dimen/sp_11"
+        tools:text="@string/FoodAndDrinks" />
+
+</LinearLayout>
